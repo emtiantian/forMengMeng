@@ -89,7 +89,10 @@ function startHeartAnimation() {
 
 function timeElapse(c) {
 	var e = Date();
+	console.log("e"+Date.parse(e));
+	console.log("c"+Date.parse(c));
 	var f = (Date.parse(e) - Date.parse(c)) / 1000;
+	console.log(f);
 	var g = Math.floor(f / (3600 * 24));
 	f = f % (3600 * 24);
 	var b = Math.floor(f / 3600);
